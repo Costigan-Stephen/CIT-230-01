@@ -20,7 +20,7 @@ li {
 
 main{
     padding-top: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 h1 {
@@ -36,7 +36,6 @@ h2 {
 }
 
 header, main, footer {
-    padding: 0rem;
     max-width:  100% /*(px = pixel is a unit of measure)  */;
 }
 
@@ -63,15 +62,41 @@ footer { /* Fixed footer, stays on bottom where I want it.  */
     width: 100%;
 }
 
+pre {
+	-webkit-overflow-scrolling: touch;
+    font-family: "Courier New", monospace;
+	font-size: 0.9em;
+	margin: 0 0 2em 0;
+}
 
-.shad {
+pre code {
+	display: block;
+	line-height: 1.75;
+	padding: 1em 1.5em;
+	overflow-x: auto;
+}
+
+code {
+	background: rgba(144, 144, 144, 0.075);
+	border-radius: 4px;
+	border: solid 1px;
+	font-family: "Courier New", monospace;
+	font-size: 0.9em;
+	margin: 0 0.25em;
+    padding: 0.25em 0.65em;
+
+}
+
+div {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    
+}
+
+.shad {
     color: white;
     width: 40%;
 	height: 100px;
@@ -83,13 +108,6 @@ footer { /* Fixed footer, stays on bottom where I want it.  */
 }
 
 .bord{
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-   
     color: white;
     width: 40%;
 	height: 100px;
@@ -109,13 +127,6 @@ footer { /* Fixed footer, stays on bottom where I want it.  */
 }
 
 .corn{
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-   
     color: white;
     width: 40%;
 	height: 100px;
