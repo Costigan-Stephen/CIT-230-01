@@ -62,3 +62,65 @@ footer { /* Fixed footer, stays on bottom where I want it.  */
     bottom: 0;
     width: 100%;
 }
+
+
+.shad {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+    color: white;
+    width: 40%;
+	height: 100px;
+	background: #444444;
+    
+    /* SHADOW SETTINGS.  */
+    box-shadow: 3px 3px 1px grey;
+    text-shadow: 2px 2px 4px red;
+}
+
+.bord{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+   
+    color: white;
+    width: 40%;
+	height: 100px;
+	background: #444444;
+    
+    /* BORDER SETTINGS.  */
+    outline-style: solid;
+    border: 1px solid red;
+    
+    font-weight: bolder;
+    text-shadow: 
+        -1px -1px 0 black, 
+        1px -1px 0 black, 
+        -1px 1px 0 black, 
+        1px 1px 0 black;
+    
+}
+
+.corn{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+   
+    color: white;
+    width: 40%;
+	height: 100px;
+	background: #444444;
+    
+    /* CORNER SETTINGS.  */
+    border-radius: 50px;
+}
