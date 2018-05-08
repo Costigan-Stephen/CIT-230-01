@@ -96,15 +96,14 @@ div {
     position: relative;
 }
 
-.shad {
+.corn{
     color: white;
     width: 40%;
 	height: 100px;
 	background: #444444;
     
-    /* SHADOW SETTINGS.  */
-    box-shadow: 3px 3px 1px grey;
-    text-shadow: 2px 2px 4px red;
+    /* CORNER SETTINGS.  */
+    border-radius: 50px;
 }
 
 .bord{
@@ -114,7 +113,6 @@ div {
 	background: #444444;
     
     /* BORDER SETTINGS.  */
-    outline-style: solid;
     border: 1px solid red;
     
     font-weight: bolder;
@@ -126,12 +124,13 @@ div {
     
 }
 
-.corn{
+.shad {
     color: white;
     width: 40%;
 	height: 100px;
 	background: #444444;
     
-    /* CORNER SETTINGS.  */
-    border-radius: 50px;
+    /* SHADOW SETTINGS.  */
+    box-shadow: 3px 3px 1px grey;
+    text-shadow: 2px 2px 4px red;
 }
