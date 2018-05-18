@@ -83,8 +83,16 @@ aside {
     padding: 20px;
 }
 
-section {
-    
+.endSpace { 
+    display: block;
+    float: left;
+    text-align: justify;
+    background-color: inherit;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+section { 
     overflow: auto;
     border-bottom-color: darkcyan;
     border-bottom-style: solid;
