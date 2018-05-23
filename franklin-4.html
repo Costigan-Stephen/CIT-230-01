@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="CSS/normalize.css">
         <link rel="stylesheet" href="CSS/weather.css">
         
-        
         <script>
             function openNav() {
                 document.getElementById("mySidenav").style.width = "250px";
@@ -22,18 +21,15 @@
             }
         </script>
     </head>
-    <body id="main">
+    <body>
         
         <header class="headBack">
             <img src="Images/cloud.png" width="200" height="273" alt="Cloudy">
             <h1 class="heading">Franklin</h1>
-            <span class="icon" onclick="openNav()" id=”content-mobile”>&#9776; &nbsp;</span>
+            <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
         </header>
-        
-        
-        
-        <div id=”content-mobile”>
-            <nav id="mySidenav" class="sidenav">
+
+        <nav id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
                 <a href="">Home</a> 
                 <a href="">Franklin</a> 
@@ -42,7 +38,6 @@
                 <a href="">Storm Center</a> 
                 <a href="">Gallery</a>
             </nav>
-        </div>
         
         <nav id=”content-desktop” class="navBar">
             <a href="">Home</a> 
@@ -86,9 +81,9 @@
                 </table>
             </section>
             
-            <section class="storyAlt">
-                <h3>Ten Day Forecast</h3>
-                <table>
+            <section class="storyAlt" id=”content-desktop”>
+                <h3 class="desktop">Ten Day Forecast</h3>
+                <table class="desktop">
                     <thead>
                         <tr>
                             <th>Day 1</th>
