@@ -161,7 +161,7 @@ header, footer, footer a {
 }
 
 .heading {
-    padding-top: 0px;
+    padding-top: 20px;
     font-size:  4rem /* (rem is a unit of measure) */;
     color:  #000 ;
     width: 100%;
