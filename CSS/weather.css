@@ -265,6 +265,11 @@ details {
         visibility: hidden;
         font-size: 0;
     }
+    
+    body { 
+        padding-top: 90px; /* compensates for fixed header/nav bar */
+        margin-top: 5px;
+    }
 }
 
 /* MEDIUM */
