@@ -108,7 +108,7 @@ aside {
 
 section { 
     overflow: auto;
-    border-bottom-color: darkcyan;
+    border-bottom-color: white;
     border-bottom-style: solid;
     border-bottom-width: thin;
     z-index: -12;
@@ -161,7 +161,7 @@ header, footer, footer a {
 }
 
 .heading {
-    padding-top: 20px;
+    margin-top: -10px;
     font-size:  4rem /* (rem is a unit of measure) */;
     color:  #000 ;
     width: 100%;
