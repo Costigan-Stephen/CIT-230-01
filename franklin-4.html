@@ -5,15 +5,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Franklin Weather</title>
         <meta name="description" content="Franklin has weather, hear it here first!">
+        <link rel="stylesheet" href="CSS/normalize.css">
         <link rel="stylesheet" href="CSS/weather.css">
+        
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
     </head>
-    <body>
+    <body id="main">
+        
         <header class="headBack">
             <img src="Images/cloud.png" width="200" height="273" alt="Cloudy">
             <h1 class="heading">Franklin</h1>
+            <span class="icon" onclick="openNav()" id=”content-mobile”>&#9776; &nbsp;</span>
         </header>
         
-        <nav>
+        
+        
+        <div id=”content-mobile”>
+            <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
+                <a href="">Home</a> 
+                <a href="">Franklin</a> 
+                <a href="">Greenville</a> 
+                <a href="">Springfield</a>
+                <a href="">Storm Center</a> 
+                <a href="">Gallery</a>
+            </nav>
+        </div>
+        
+        <nav id=”content-desktop” class="navBar">
             <a href="">Home</a> 
             <a href="">Franklin</a> 
             <a href="">Greenville</a> 
