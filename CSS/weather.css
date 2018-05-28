@@ -2,9 +2,13 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+
 * { 
     margin: 0; 
     box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 } 
 
 body { 
@@ -21,7 +25,6 @@ body {
 
 li {
     padding-left: 20%;
-
 }
 
 main{
@@ -95,16 +98,24 @@ section {
     margin: auto;
 }
 
-h2 {
-    font-size: 1.2rem ;
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    padding-top: 50px;
+    font-size:  4rem /* (rem is a unit of measure) */;
+    color:  #000 ;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.3rem ;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
 
 h3 {
     font-size: 1.2rem ;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
 }
 
 header, main, footer {
@@ -137,14 +148,6 @@ header, footer, footer a {
     width: 100%;
     left: 0;
     top: 0;
-}
-
-h1 {
-    padding-top: 50px;
-    font-size:  4rem /* (rem is a unit of measure) */;
-    color:  #000 ;
-    padding-bottom: 15px;
-    text-align: center;
 }
 
 header img {
@@ -194,6 +197,7 @@ th, td {
 }
 
 th { 
+    font-family: 'Rajdhani', sans-serif;
     background: #a3a3a3; color: aliceblue; 
 }
 
@@ -231,6 +235,8 @@ details {
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
     .navBar {
+        font-family: 'Rajdhani', sans-serif;
+
         width: 100%;
         display: block;
         text-align: center;
@@ -264,11 +270,6 @@ details {
         display: none;
         visibility: hidden;
         font-size: 0;
-    }
-    
-    body { 
-        padding-top: 90px; /* compensates for fixed header/nav bar */
-        margin-top: 5px;
     }
 }
 
@@ -344,6 +345,8 @@ details {
     }
     
     .navBar {
+        font-family: 'Rajdhani', sans-serif;
+
         width: 100%;
         display: block;
         text-align: center;
@@ -417,6 +420,7 @@ details {
 
     /* Position and style the close button (top right corner) */
     .sidenav .closebtn {
+        font-family: 'Rajdhani', sans-serif;
         position: absolute;
         top: 0;
         right: 25px;
