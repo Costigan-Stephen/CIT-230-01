@@ -3,6 +3,10 @@
 
 /* * is a wildcard referring to all elements. */
 
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+
+
 * { 
     margin: 0; 
     box-sizing: border-box;
