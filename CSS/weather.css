@@ -88,6 +88,7 @@ aside {
     text-align: justify;
     background-color: rgba(215, 255, 255, 80%); /* azure (#D7FFFF) with opacity/alpha level (a) at the end */
     padding: 20px;
+    border-color: rgba(0,0,0,0);
 }
 
 .storyAlt { 
@@ -96,13 +97,12 @@ aside {
     text-align: justify;
     background-color: rgba(255, 255, 255, 20%); /* white (#FFFFFF) with opacity/alpha level (a) at the end */
     padding: 20px;
+    border-color: rgba(0,0,0,0);
 }
 
 section { 
     overflow: auto;
-    border-bottom-color: white;
-    border-bottom-style: solid;
-    border-bottom-width: thin;
+    border-bottom-color: rgba(0,0,0,0);
     z-index: -12;
     width: 100%;
     margin: auto;
@@ -121,7 +121,7 @@ h2, h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 1.3rem ;
     text-align: center;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 3px solid #000;
 }
 
 h3 {
@@ -460,6 +460,7 @@ details {
     
     .icon {
         text-align: left;
+        color: #000;
         font-size:38px;
         cursor:pointer;
         margin-top: 28px;
@@ -471,12 +472,6 @@ details {
         bottom:-10px;
         float: left;
         z-index:20;
-
-        text-shadow: 
-            -2px -2px 0px #006666, 
-            2px -2px 0px #006666, 
-            -2px 2px 0px #006666, 
-            2px 2px 0px #006666;
     }
     
     .sidenav {padding-top: 15px; z-index:18;}
@@ -503,6 +498,7 @@ details {
     body { 
         padding-top: 20px; /* compensates for fixed header/nav bar */
         margin-top: 45px;
+        padding-bottom: 0px;
     }
     
     .desktop {
