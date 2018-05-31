@@ -28,7 +28,7 @@ body {
     background-repeat: no-repeat;
     z-index: -50;
     position: fixed;
-    width: auto;
+    width: crop;
     height: 100%;
     top: 0px;
 }
