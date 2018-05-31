@@ -7,6 +7,7 @@
     margin: 0; 
     box-sizing: border-box;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    src:    url('Fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Regular.ttf');
 } 
 
 body { 
@@ -24,6 +25,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
+}
+
+.backImg{
+    background-image: url('Images\franklin-large.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    
+    z-index: -50;
+    top: 0px;
+    padding: 0;
 }
 
 li {
@@ -554,4 +566,3 @@ details {
         border-color: rgba(0,0,0,0);
     }
 }
-
