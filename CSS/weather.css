@@ -20,9 +20,8 @@ body {
     padding-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
-   
-    background-image: url('../../Images/franklin-original.jpg');
-    background-image: url('Images/franklin-original.jpg');
+    
+    background-image: url('https://costigan-stephen.github.io/CIT-230-01/Images/franklin-original.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
@@ -296,7 +295,7 @@ details {
     }
     
     body{
-        background-image: url('../../Images/franklin-large.jpg');
+        background-image: url('https://costigan-stephen.github.io/CIT-230-01/Images/franklin-large.jpg');
     }
     
 }
@@ -413,7 +412,7 @@ details {
         padding-top: 135px; /* compensates for fixed header/nav bar */
         padding-bottom: 0px; 
         margin-top: 5px;
-        background-image: url('../../Images/franklin-medium.jpg');
+        background-image: url('https://costigan-stephen.github.io/CIT-230-01/Images/franklin-medium.jpg');
     }
     
     .endSpace { 
@@ -523,7 +522,7 @@ details {
         padding-top: 40px; /* compensates for fixed header/nav bar */
         margin-top: 45px;
         padding-bottom: 0px;
-        background-image: url('../../Images/franklin-small.jpg');
+        background-image: url('https://costigan-stephen.github.io/CIT-230-01/Images/franklin-small.jpg');
     }
     
     .desktop {
