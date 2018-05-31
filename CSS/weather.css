@@ -26,17 +26,6 @@ body {
     background-position: center; 
 }
 
-.backImg{
-    background-image: url('Images\franklin-large.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-    
-    z-index: -50;
-    top: 0px;
-    padding: 0;
-}
-
 li {
     padding-left: 20%;
 }
