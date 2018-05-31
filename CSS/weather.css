@@ -2,8 +2,7 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
-@import url('https://fonts.googleapis.com/css?family=Rajdhani');
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('Fonts/*');
 
 * { 
     margin: 0; 
@@ -21,14 +20,20 @@ body {
     padding-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
+    
+    background-image: url('../../Images/franklin-original.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 }
 
 .backImg{
-    background-size: auto;
+    background-image: url('Images\franklin-large.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    
     z-index: -50;
-    position: fixed;
-    height: 100%;
     top: 0px;
     padding: 0;
 }
@@ -110,6 +115,7 @@ section {
 
 h1 {
     font-family: 'Rajdhani', sans-serif;
+    src:    url('Fonts/Rajdhani/Rajdhani-Bold.ttf');
     padding-top: 50px;
     font-size:  4rem /* (rem is a unit of measure) */;
     color:  #000 ;
@@ -288,6 +294,10 @@ details {
         font-size: 0;
     }
     
+    body{
+        background-image: url('../../Images/franklin-large.jpg');
+    }
+    
 }
 
 /* MEDIUM */
@@ -402,6 +412,7 @@ details {
         padding-top: 135px; /* compensates for fixed header/nav bar */
         padding-bottom: 0px; 
         margin-top: 5px;
+        background-image: url('../../Images/franklin-medium.jpg');
     }
     
     .endSpace { 
@@ -511,6 +522,7 @@ details {
         padding-top: 40px; /* compensates for fixed header/nav bar */
         margin-top: 45px;
         padding-bottom: 0px;
+        background-image: url('../../Images/franklin-small.jpg');
     }
     
     .desktop {
