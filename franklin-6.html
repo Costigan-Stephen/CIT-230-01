@@ -11,7 +11,16 @@
         <script src="JS/navBar.js"></script>
     </head>
     <body>
-        <img src="Images/franklin-large.jpg" srcset="Images/franklin-small.jpg 900w, Images/franklin-medium.jpg 1800w, Images/franklin-large.jpg 2000w, Images/franklin-original.jpg 4000w" class="backImg">
+        <img src="Images/franklin-original.jpg" 
+             srcset="Images/franklin-original.jpg 2201w, Images/franklin-large.jpg 2200w, Images/franklin-medium.jpg 1800w, Images/franklin-small.jpg 900w" 
+             
+             sizes="(min-width:2201px) 2001w,
+                    (max-width:2200px) 2200w,
+                    (max-width:1800px) 1800w,
+                    (max-width:900px) 900w"
+             
+             class="backImg">
+        
         <header class="headBack">
             <img src="Images/cloud.png" width="200" height="273" alt="Cloudy">
             <h1 class="heading">Franklin</h1>
