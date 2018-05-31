@@ -17,12 +17,12 @@
             /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
-                document.getElementById("main").style.marginLeft = "0";
+                document.getElementBy("main").style.marginLeft = "0";
             }
         </script>
     </head>
     <body>
-        
+        <img src="Images/franklin-original.jpg" class="backImg">
         <header class="headBack">
             <img src="Images/cloud.png" width="200" height="273" alt="Cloudy">
             <h1 class="heading">Franklin</h1>
@@ -135,12 +135,13 @@
         </main>
         <footer>  
             <section class="contact">
-                <p><b>The Weather Site</b></p>
+                <p>The Weather Site</p>
                 <p>123 Main St, Franklin, MU, 83454<br>
                 (999) 999 999 contact@theurl.com<br>
                 </p>
             </section>
-            <p>&copy; 2018 &nbsp; | &nbsp; Weather the Weather &nbsp; | &nbsp; Franklin &nbsp; | &nbsp; <a href="">Home</a><!-- Will return user to main page! --></p>
+            &copy; 2018 &nbsp; | &nbsp; Franlkin Weather &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="index.html">Home</a><!-- Will return user to main page, but for now goes to index! -->
         </footer>
+        <script src="JS/currentdate.js">calcDate()</script>
     </body>
 </html>
