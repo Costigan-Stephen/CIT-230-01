@@ -8,21 +8,10 @@
         <link rel="stylesheet" href="CSS/normalize.css">
         <link rel="stylesheet" href="CSS/weather.css">
         <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
-            }
-
-            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                document.getElementBy("main").style.marginLeft = "0";
-            }
-        </script>
+        <script src="JS/navBar.js"></script>
     </head>
     <body>
-        <img src="Images/franklin-original.jpg" class="backImg" srcset="Images/franklin-large.jpg 2200w, Images/franklin-medium.jpg 1800w, Images/franklin-small.jpg 900w">
+        <img src="Images/franklin-large.jpg" class="backImg" srcset="Images/franklin-original.jpg 4000w, Images/franklin-large.jpg 2200w, Images/franklin-medium.jpg 1800w, Images/franklin-small.jpg 900w">
         <header class="headBack">
             <img src="Images/cloud.png" width="200" height="273" alt="Cloudy">
             <h1 class="heading">Franklin</h1>
@@ -142,6 +131,6 @@
             </section>
             &copy; 2018 &nbsp; | &nbsp; Franlkin Weather &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="index.html">Home</a><!-- Will return user to main page, but for now goes to index! -->
         </footer>
-        <script src="JS/currentdate.js">calcDate()</script>
+        <script src="JS/currentdate.js"></script>
     </body>
 </html>
