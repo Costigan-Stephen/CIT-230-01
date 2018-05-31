@@ -28,9 +28,9 @@ body {
     background-repeat: no-repeat;
     z-index: -50;
     position: fixed;
-    width: crop;
     height: 100%;
     top: 0px;
+    padding: 0;
 }
 
 li {
@@ -208,11 +208,16 @@ th, td {
 
 th { 
     font-family: 'Rajdhani', sans-serif;
-    background: #a3a3a3; color: aliceblue; 
+    background: rgba(163,163,163,70%); 
+    color: aliceblue; 
+}
+
+tbody tr {
+    background-color: rgba(240,240,240,70%);
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: rgba(210,210,210,70%);
 }
 
 details { 
@@ -274,6 +279,7 @@ details {
         background-color: inherit;
         padding: 20px;
         padding-bottom: 30px;
+        border-color: rgba(0,0,0,0);
     }
     
     .sidenav {
@@ -281,6 +287,7 @@ details {
         visibility: hidden;
         font-size: 0;
     }
+    
 }
 
 /* MEDIUM */
@@ -392,8 +399,13 @@ details {
     }
     
     body { 
-        padding-top: 90px; /* compensates for fixed header/nav bar */
+        padding-top: 135px; /* compensates for fixed header/nav bar */
+        padding-bottom: 0px; 
         margin-top: 5px;
+    }
+    
+    .endSpace { 
+        border-color: rgba(0,0,0,0);
     }
 }
 
@@ -496,7 +508,7 @@ details {
     }
     
     body { 
-        padding-top: 20px; /* compensates for fixed header/nav bar */
+        padding-top: 40px; /* compensates for fixed header/nav bar */
         margin-top: 45px;
         padding-bottom: 0px;
     }
@@ -537,4 +549,9 @@ details {
         object-position: center;
         object-fit: cover;
     }
+    
+    .endSpace { 
+        border-color: rgba(0,0,0,0);
+    }
 }
+
