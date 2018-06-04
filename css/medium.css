@@ -1,0 +1,118 @@
+/* MEDIUM */
+@media only screen and (min-width: 37em ) and (max-width: 64em ){ 
+    /* The side navigation menu */
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    .heading {
+        margin-top: -10px;
+        font-size:  4rem /* (rem is a unit of measure) */;
+    }
+    
+    header img {
+        left: 36px;
+    }
+    
+    .icon {
+        text-align: left;
+        font-size:38px;
+        cursor:pointer;
+        margin-top: 35px;
+        margin-left: 25px;
+        position:relative;
+        top:-10px;
+        right:-10px;
+        left:-10px;
+        bottom:-10px;
+        float: left;
+        z-index:40;
+        visibility: hidden;
+
+        text-shadow: 
+            -2px -2px 0px #006666, 
+            2px -2px 0px #006666, 
+            -2px 2px 0px #006666, 
+            2px 2px 0px #006666;
+    }
+    
+    .navBar {
+        font-family: 'Rajdhani', sans-serif;
+
+        width: 100%;
+        display: block;
+        text-align: center;
+        background-color: #003c66;
+        color: #FFF;
+        position: fixed;
+        top: 85px;
+        left: 0;
+    }
+
+    .navBar a{
+        text-decoration: none;
+        color: #FFF;
+        padding: 7px;
+    }
+
+    .navBar a:hover{
+        background-color: #0068b3;
+    }
+    
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    #content-mobile {
+        display: block;
+        visibility: visible;
+        font-size: inherit;
+    }
+
+    #content-desktop {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+    
+    body { 
+        padding-top: 135px; /* compensates for fixed header/nav bar */
+        padding-bottom: 0px; 
+        margin-top: 5px;
+    }
+    
+    .endSpace { 
+        border-color: rgba(0,0,0,0);
+    }
+}

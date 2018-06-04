@@ -1,0 +1,59 @@
+/* LARGE */
+@media only screen and (min-width: 64em ) { 
+    
+    #content-desktop {
+        display: block;
+        visibility: visible;
+        font-size: inherit;
+    }
+
+    #content-mobile {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    .navBar {
+        font-family: 'Rajdhani', sans-serif;
+
+        width: 100%;
+        display: block;
+        text-align: center;
+        background-color: #003c66;
+        color: #FFF;
+        position: fixed;
+        top: 85px;
+        left: 0;
+    }
+
+    .navBar a{
+        text-decoration: none;
+        color: #FFF;
+        padding: 7px;
+    }
+
+    .navBar a:hover{
+        background-color: #0068b3;
+    }
+    
+    .endSpace { 
+        display: block;
+        float: left;
+        text-align: justify;
+        background-color: inherit;
+        padding: 20px;
+        padding-bottom: 30px;
+        border-color: rgba(0,0,0,0);
+    }
+    
+    .sidenav {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+    
+}
