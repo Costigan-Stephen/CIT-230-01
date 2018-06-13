@@ -89,7 +89,3 @@ function phone_formatting(ele,restore) {
               }
 
             }
-
-            document.getElementById('phone').onkeyup = function(e) {
-              phone_number_check(this,e);
-            }
