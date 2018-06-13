@@ -97,6 +97,10 @@ tfoot tr{
     font-size: 8pt;
 }
 
+.center{
+    text-align: center;
+}
+
 header img {
     padding-top: 10px;
     height: auto;
