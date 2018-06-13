@@ -62,7 +62,7 @@ th, td {
     padding-right: 0.5rem;
 }
 
-thead h6{
+thead span{
     padding: 5px;
     font-size: 18pt;
     font-weight: bolder;
