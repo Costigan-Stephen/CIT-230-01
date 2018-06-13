@@ -45,12 +45,69 @@ header, footer, footer a {
     color: whitesmoke;
 }
 
+table {
+    margin: auto;
+    font-family: Ubuntu, sans-serif;
+    font-weight: lighter;
+    border-spacing: 0px;
+    border: 0.05px solid #C4C4C4;
+    border-width: thin;
+}
+
+th, td {
+    border: 0.05px solid #C4C4C4;
+    border-width: thin;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+thead h6{
+    padding: 5px;
+    font-size: 18pt;
+    font-weight: bolder;
+}
+
+th{ 
+    background: #7fb9c2; 
+    color: #000;
+}
+
+tbody tr {
+    background-color: #e7ffed;
+}
+
+tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+tbody tr:first-child {
+    background-color: #628ca6;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.highlight {
+    background-color: #628ca6;
+    color: #fff;
+}
+
+tfoot tr{
+    background: #7fb9c2;
+    font-size: 8pt;
+}
+
 header img {
     padding-top: 10px;
     height: auto;
     float: top;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p {
+    margin: auto;
+    padding: 40px;
 }
 
 footer { /* Fixed footer, stays on bottom where I want it.  */
