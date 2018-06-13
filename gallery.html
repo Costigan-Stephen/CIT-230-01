@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gallery</title>
+        <meta name="description" content="Franklin has weather, hear it here first!">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/weather-7.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/gallery.css">
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+        <script src="js/navBar.js"></script>
+    </head>
+    <body>
+        <picture class="backImg">
+            <source media="(min-width:1601px)" srcset="images/gallery/weather-background.jpg">
+            <source media="(max-width:1600px) and (min-width:601px)" srcset="images/gallery/weather-background-medium.jpg">
+            <source media="(max-width:600px)" srcset="images/gallery/weather-background-small.jpg">
+            <img src="images/gallery/weather-background.jpg" alt="Background">
+        </picture>
+        
+        <header class="headBack">
+            <img src="images/cloud.png" width="200" height="273" alt="Cloudy">
+            <h1 class="heading">Gallery</h1>
+            <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
+        </header>
+
+        <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
+                <a href="">Home</a> 
+                <a href="franklin-8.html">Franklin</a> 
+                <a href="">Greenville</a> 
+                <a href="">Springfield</a>
+                <a href="stormcenter.html">Storm Center</a> 
+                <a href="gallery.html" style="color: aqua">Gallery</a>
+            </nav>
+        
+        <nav id=”nav” class="navBar">
+            <a href="">Home</a> 
+            <a href="franklin-7.html">Franklin</a> 
+            <a href="">Greenville</a> 
+            <a href="">Springfield</a>
+            <a href="">Storm Center</a> 
+            <a href="gallery-7.html" style="color: aqua">Gallery</a>
+        </nav>
+
+        <main>
+            <section class="gallery">
+                <div class="galleryImages">
+                    <figure>
+                        <img id="image1" src="images/gallery/image1-s.jpg" alt="Super Cell" onclick="img(1)">
+                        <figcaption id="cap1">Lorem ipsum dolor sit amet, consectetur</figcaption>
+                    </figure>
+                    <figure>
+                        <img id="image2" src="images/gallery/image2-s.jpg" alt="Sunny Beach" onclick="img(2)">
+                        <figcaption id="cap2">adipiscing elit, sed do eiusmod tempor</figcaption>
+                    </figure>
+                    <figure>
+                        <img id="image3" src="images/gallery/image3-s.jpg" alt="Beach Night" onclick="img(3)">
+                        <figcaption id="cap3">incididunt ut labore et dolore magna</figcaption>
+                    </figure>
+                    <figure onclick="onClick(this)">
+                        <img id="image4" src="images/gallery/image4-s.jpg" alt="Rain City" onclick="img(4)">
+                        <figcaption id="cap4">aliqua. Ut enim ad minim veniam, quis</figcaption>
+                    </figure>
+                    <figure onclick="onClick(this)">
+                        <img id="image5" src="images/gallery/image5-s.jpg" alt="Sunny Field" onclick="img(5)">
+                        <figcaption id="cap5">nostrud exercitation ullamco laboris nisi</figcaption>
+                    </figure>
+                    <figure onclick="onClick(this)">    
+                        <img id="image6" src="images/gallery/image6-s.jpg" alt="Rain Trees" onclick="img(6)">
+                        <figcaption id="cap6">nisi ut aliquip ex ea commodo consequat</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <!-- The Modal -->
+            <div id="modal01" class="modal" onclick="this.style.display='none'">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" src="none" id="full" alt="preview">
+                
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption" class="caption"></div>
+            </div>
+            <section class="endSpace"><p>&nbsp;<br>&nbsp;</p></section>
+        </main>
+        <footer>  
+            <section class="contact">
+                <p>The Weather Site</p>
+                <p>123 Main St, Franklin, MU, 83454<br>
+                (999) 999 999 contact@theurl.com<br>
+                </p>
+            </section>
+            &copy; 2018 &nbsp; | &nbsp; Franlkin Weather &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="index.html">Home</a><!-- Will return user to main page, but for now goes to index! -->
+        </footer>
+        <script src="js/currentdate.js"></script>
+        <script src="js/gallery.js"></script>
+    </body>
+</html>
