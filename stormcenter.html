@@ -55,13 +55,20 @@
                 <input type="text" id="name" name="name" pattern="[A-za-z]{5}" title="Please enter a valid name"><br>
                 Email Address:<br>
                 <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Email" placeholder="xxxxxx@xxxx.xx">
-                <br>
+                <span class="gridIn"><div>Phone Number:</div><div>Zip Code:</div>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]" required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]" required>
+                
+                <div>Storm Date:</div><div>Storm Type</div>
+                <input type="text" id="date" name="date" pattern="[0-9/-]" required>
+                <input type="text" id="type" name="type" pattern="[0-9]" required>
+                </span>
                 <input type="submit" class="submit">
 
             </form>
                 
             </section>   
-            
+
 <!--            <section class="endSpace"><p>&nbsp;<br></p></section>Extra space below if Last so that footer doesn't hide text-->
         </main>
         <footer>  
