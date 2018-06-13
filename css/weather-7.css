@@ -151,7 +151,7 @@ aside {
     display: grid;
     float: left;
     text-align: justify;
-    background-color: rgba(215, 255, 255, 0.8); /* azure (#D7FFFF) with opacity/alpha level (a) at the end */
+    background-color: rgba(215, 255, 255, 0.8);  azure (#D7FFFF) with opacity/alpha level (a) at the end 
     padding: 20px;
     border-color: rgba(0,0,0,0);
 }
