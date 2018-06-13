@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Franklin Weather</title>
+        <meta name="description" content="Franklin has weather, hear it here first!">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/storm.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+        <script src="js/navBar.js"></script>
+    </head>
+    <body>
+        <picture class="backImg">
+            <source media="(min-width:2201px)" srcset="images/storm/tornado-original.jpg">
+            <source media="(max-width:2200px) and (min-width:1801px)" srcset="images/storm/tornado-large.jpg">
+            <source media="(max-width:1800px) and (min-width:901px)" srcset="images/storm/tornado-medium.jpg">
+            <source media="(max-width:900px)" srcset="images/storm/tornado-small.jpg">
+            <img src="images/storm/tornado-large.jpg" alt="Background">
+        </picture>
+        
+        <header class="headBack">
+            <img src="images/cloud.png" width="200" height="273" alt="Cloudy">
+            <h1 class="heading">Storm Center</h1>
+            <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
+        </header>
+
+        <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
+                <a href="">Home</a> 
+                <a href="franklin-8.html">Franklin</a> 
+                <a href="">Greenville</a> 
+                <a href="">Springfield</a>
+                <a href="stormcenter.html"  style="color: aqua">Storm Center</a> 
+                <a href="gallery.html">Gallery</a>
+            </nav>
+        
+        <nav id=”nav” class="navBar">
+            <a href="">Home</a> 
+            <a href="franklin-8.html">Franklin</a> 
+            <a href="">Greenville</a> 
+            <a href="">Springfield</a>
+            <a href="stormcenter.html" style="color: aqua">Storm Center</a> 
+            <a href="gallery.html" >Gallery</a>
+        </nav>
+
+        <main class="main">
+            <section class="story">
+     
+            <form>
+                Your Full Name:<br>
+                <input type="text" id="name" name="name" pattern="[A-za-z]{5}" title="Please enter a valid name"><br>
+                Email Address:<br>
+                <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Email" placeholder="xxxxxx@xxxx.xx">
+                <br>
+                <input type="submit" class="submit">
+
+            </form>
+                
+            </section>   
+            <section class="storyAlt" id=”content-desktop”>
+                <h3 class="desktop">Ten Day Forecast</h3>
+                
+            </section>
+            <section class="story">
+                <article>
+                    <h3>Weather Story</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
+                    </p>
+                </article>
+            </section>
+<!--            <section class="endSpace"><p>&nbsp;<br></p></section>Extra space below if Last so that footer doesn't hide text-->
+        </main>
+        <footer>  
+            <section class="contact">
+                <p>The Weather Site</p>
+                <p>123 Main St, Franklin, MU, 83454<br>
+                (999) 999 999 contact@theurl.com<br>
+                </p>
+            </section>
+            &copy; 2018 &nbsp; | &nbsp; Franlkin Weather &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="index.html">Home</a><!-- Will return user to main page, but for now goes to index! -->
+        </footer>
+        <script src="js/currentdate.js"></script>
+        <script src="js/phone.js">
+        document.getElementById('phone').onkeyup = function(e) {
+            phone_number_check(this,e);
+        }
+        </script>
+    </body>
+</html>
