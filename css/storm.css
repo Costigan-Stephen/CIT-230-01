@@ -83,7 +83,7 @@ footer a{
 /* --------------- MULTIPLE ----------------------*/
 
 header, main, footer {
-    max-width:  100% (px = pixel is a unit of measure)  ;
+    max-width:  100%;
 }
 
 header, footer, footer a {
@@ -97,7 +97,7 @@ header, footer, footer a {
 
 body { 
     display: grid;
-    padding-top: 40px;  compensates for fixed header/nav bar 
+    padding-top: 40px; /* compensates for fixed header/nav bar */
     margin-top: 100px;
     font-size: 16px; 
     line-height: 32px;
@@ -259,7 +259,7 @@ input[type="radio"] {
 }
 
 input::-webkit-calendar-picker-indicator {
-    opacity: 100;
+    opacity: 1;
 }
 
 .myarrow:after {
