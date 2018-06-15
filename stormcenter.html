@@ -11,11 +11,7 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/small.css">
         <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
-        <script src="js/formCheck.js">
-        document.getElementById('phone').onkeyup = function(e) {
-  phone_number_check(this,e);
-}
-        </script>
+        <script src="js/formCheck.js"></script>
     </head>
     <body>
         <picture class="backImg">
@@ -58,16 +54,16 @@
                 <h2>Report a Storm</h2>                
                 
                 Your Full Name:<br>
-                <input type="text" id="name" name="name" pattern="[A-za-z]{5}" title="Please enter a valid name"><br>
+                <input type="text" id="name" name="name" pattern="[A-za-z ]{5}" title="Please enter a valid name"><br>
                 Email Address:<br>
-                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Email" title="Only enter numbers 0-9">
-                <span class="gridIn"><div>Phone Number:</div><div>Zip Code:</div>
+                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="xxxxx@xxx.xx">
+                <span class="gridIn"><span>Phone Number:</span><span>Zip Code:</span>
                 <input id="bar" placeholder="(123) 456-7890" type="text" name="txtInput" onkeydown="javascript:backspacerDOWN(this,event);" onkeyup="javascript:backspacerUP(this,event);">
-                <input type="number" id="zip" name="zip" pattern="[0-9]{5-5}" onKeyDown="limitText(this,5)" required title="Please Enter a valid Zip Code">
-                <div>Storm Date:</div><div>Storm Severity [1-10]</div>
-                <input type="date" id="date" name="date" pattern="[0-9/-]{10-10}" required>
+                <input type="number" id="zip" name="zip" onKeyDown="limitText(this,5)" required>
+                <span>Storm Date:</span><span>Storm Severity [1-10]</span>
+                <input type="date" id="dateEntry" name="date" required >
                 <input type="range" name="Severity" min="1" max="10" value="1">
-                <div>Storm Type</div><div>Storm Region</div>
+                <span>Storm Type</span><span>Storm Region</span>
                 <span class="myarrow"><input type="text" list="typeSelect" placeholder="Storm Type ..."></span>
                 <span class="myarrow"><input type="text" list="location" placeholder="Select Region ..."></span>
                 </span> 
@@ -81,7 +77,7 @@
                   </div>
                 </fieldset>
                 Additional Comments<br>
-                <textarea name="comment" form="comm" rows="4" cols="50" class="forms">Enter text here...</textarea>
+                <textarea name="comment" form="Form1" rows="4" cols="50" class="forms">Enter text here...</textarea>
                 
                 <datalist id="typeSelect">
                     <option value="Flash Flood">
