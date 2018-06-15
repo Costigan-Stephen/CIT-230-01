@@ -175,10 +175,12 @@ function ParseChar(sStr, sChar) {
     return sNewStr;
 }
 
+document.getElementById('phone').onkeyup = function(e) {
+  phone_number_check(this,e);
+}
 
 //Limit length
 function limitText(limitField, limitNum) {
-    limitNum = limitNum-1;
     if (limitField.value.length > limitNum) {
         limitField.value = limitField.value.substring(0, limitNum);
     } 
