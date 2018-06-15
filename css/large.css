@@ -1,6 +1,10 @@
 /* LARGE */
 @media only screen and (min-width: 64em ) { 
     
+    body{
+        padding-top: 140px;
+    }
+    
     #content-desktop {
         display: block;
         visibility: visible;

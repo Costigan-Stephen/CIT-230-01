@@ -11,11 +11,6 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/small.css">
         <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
-        <script src="js/formCheck.js">
-        document.getElementById('phone').onkeyup = function(e) {
-  phone_number_check(this,e);
-}
-        </script>
     </head>
     <body>
         <picture class="backImg">
@@ -54,51 +49,9 @@
         <main class="main">
             <section class="story">
      
-            <form name="processedForm" method="get" id="Form1" action="thankyou.html">
-                <h2>Report a Storm</h2>                
-                
-                Your Full Name:<br>
-                <input type="text" id="name" name="name" pattern="[A-za-z]{5}" title="Please enter a valid name"><br>
-                Email Address:<br>
-                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Email" title="Only enter numbers 0-9">
-                <span class="gridIn"><div>Phone Number:</div><div>Zip Code:</div>
-                <input id="bar" placeholder="(123) 456-7890" type="text" name="txtInput" onkeydown="javascript:backspacerDOWN(this,event);" onkeyup="javascript:backspacerUP(this,event);">
-                <input type="number" id="zip" name="zip" pattern="[0-9]{5-5}" onKeyDown="limitText(this,5)" required title="Please Enter a valid Zip Code">
-                <div>Storm Date:</div><div>Storm Severity [1-10]</div>
-                <input type="date" id="date" name="date" pattern="[0-9/-]{10-10}" required>
-                <input type="range" name="Severity" min="1" max="10" value="1">
-                <div>Storm Type</div><div>Storm Region</div>
-                <span class="myarrow"><input type="text" list="typeSelect" placeholder="Storm Type ..."></span>
-                <span class="myarrow"><input type="text" list="location" placeholder="Select Region ..."></span>
-                </span> 
-                Are you safe?
-                <fieldset>
-                  <div class="some-class">
-                    <input type="radio" class="radio" name="x" value="y" id="y" />
-                    <label for="y">Yes</label>
-                    <input type="radio" class="radio" name="x" value="z" id="z" />
-                    <label for="z">No</label>
-                  </div>
-                </fieldset>
-                Additional Comments<br>
-                <textarea name="comment" form="comm" rows="4" cols="50" class="forms">Enter text here...</textarea>
-                
-                <datalist id="typeSelect">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                </datalist>
-                <datalist id="location">
-                    <option value="Select Regiom ..." selected disabled>
-                    <option value="Franklin">
-                    <option value="Greenville">
-                    <option value="Springfield">
-                </datalist>
-                <input id="Submit" type="submit" value="Submit" name="Submit1" class="submit">
-
-            </form>
+                <h2>Thank you!</h2>
+                <p class="center">Your form was successfully submitted.  Thanks for passing on that information to us! <br>
+                <img src="images/storm/thanks.png" style="width: 40%; height: auto;"></p>
                 
             </section>   
 
@@ -114,6 +67,11 @@
             &copy; 2018 &nbsp; | &nbsp; Franlkin Weather &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="index.html">Home</a><!-- Will return user to main page, but for now goes to index! -->
         </footer>
         <script src="js/currentdate.js"></script>
+        <script src="js/phone.js">
+        document.getElementById('phone').onkeyup = function(e) {
+            phone_number_check(this,e);
+        }
+        </script>
         <script src="js/navBar.js"></script>
 
     </body>
