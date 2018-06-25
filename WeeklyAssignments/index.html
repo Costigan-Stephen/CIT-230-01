@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="pagename">Weather</title>
+    <meta name="description" content="Franklin has weather, hear it here first!">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <script src="js/redirect.js"></script>
+    <script src="js/json.js"></script>
+</head>
+
+<body>
+    <picture class="backImg">
+        <source media="(min-width:2201px)" srcset="images/main/coast-original.jpg">
+        <source media="(max-width:2200px) and (min-width:1801px)" srcset="images/main/coast-large.jpg">
+        <source media="(max-width:1800px) and (min-width:901px)" srcset="images/main/coast-medium.jpg">
+        <source media="(max-width:900px)" srcset="images/main/coast-small.jpg">
+        <img src="images/main/coast-large.jpg" alt="Background">
+    </picture>
+
+    <header class="headBack">
+        <img src="images/cloud.png" alt="current weather" id="weather_icon">
+        <h1 class="heading">Weather</h1>
+        <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
+    </header>
+
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
+        <a href="javascript:redirect('home');" style="color: aqua">Home</a>
+        <a href="javascript:redirect('franklin');">Franklin</a>
+        <a href="javascript:redirect('greenville');">Greenville</a>
+        <a href="javascript:redirect('springfield');">Springfield</a>
+        <a href="javascript:redirect('storm');">Storm Center</a>
+        <a href="javascript:redirect('gallery');">Gallery</a>
+    </nav>
+
+    <nav id=”nav” class="navBar">
+        <a href="javascript:redirect('home');" style="color: aqua">Home</a>
+        <a href="javascript:redirect('franklin');">Franklin</a>
+        <a href="javascript:redirect('greenville');">Greenville</a>
+        <a href="javascript:redirect('springfield');">Springfield</a>
+        <a href="javascript:redirect('storm');">Storm Center</a>
+        <a href="javascript:redirect('gallery');">Gallery</a>
+    </nav>
+
+    <main class="main">
+        <section class="story white center">
+            <h4 class="white">Forecast</h4>
+            <h2>Enter your ZIP code below</h2>
+            <p>Zip Code: <input type="number" id="zip" class="zipText"><button onclick="indexZip()" class="zipButton">GO</button></p>
+
+
+            <aside class="rightImg hide black" id=weather>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2"><span id="place">city</span> Weather Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Status</td>
+                            <td><span id="stat"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Current Temp</td>
+                            <td><span id="temp">90</span>&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td>High</td>
+                            <td><span id="temph">90</span>&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td>Low</td>
+                            <td><span id="templ">66</span>&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td>Max Wind</td>
+                            <td><span id="wind">00</span> MPH</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan=2 onclick="hideZip()" class="clearButton">Hide</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </aside>
+        </section>
+        <section class=endSpace></section>
+        <section class="storyAlt center">
+            <h4 class=>Weather Outlook</h4>
+            <h2>Check out some of the areas we service:</h2>
+            <span class="gridAlign">
+                <div class="case" onclick="redirect('franklin')">
+                    <h3><span id="t1name">city</span></h3>
+                    <p><span id="t1motto">motto</span></p>
+                    <p>Founded: <span id="t1year">year</span></p>
+                    <p>Population: <span id="t1pop">pop</span></p>
+                    <p>Average Rainfall: <span id="t1rain">rain</span></p>
+                    
+                </div>
+                <div class="case" onclick="redirect('greenville')">
+                    <h3><span id="t2name">city</span></h3>
+                    <p><span id="t2motto">motto</span></p>
+                    <p>Founded: <span id="t2year">year</span></p>
+                    <p>Population: <span id="t2pop">pop</span></p>
+                    <p>Average Rainfall: <span id="t2rain">rain</span></p>
+                </div>
+                <!--Third location is not part of assignment, easier to just hide it.-->
+                <div class="hide">
+                    <h3><span id="t3name">city</span></h3>
+                    <p><span id="t3motto">motto</span></p>
+                    <p><span id="t3year">year</span></p>
+                    <p><span id="t3pop">pop</span></p>
+                    <p><span id="t3rain">rain</span></p>
+                </div>
+                <div class="case" onclick="redirect('springfield')">
+                    <h3><span id="t4name">city</span></h3>
+                    <p><span id="t4motto">motto</span></p>
+                    <p>Founded: <span id="t4year">year</span></p>
+                    <p>Population: <span id="t4pop">pop</span></p>
+                    <p>Average Rainfall: <span id="t4rain">rain</span></p>
+                </div>
+            </span>
+
+
+        </section>
+        <!--            <section class="endSpace"><p>&nbsp;<br></p></section>Extra space below if Last so that footer doesn't hide text-->
+    </main>
+    <footer>
+        <section class="contact">
+            <p>The Weather Site</p>
+            <p>123 Main St, Franklin, MU, 65250<br> (999) 999 999 contact@theurl.com<br>
+            </p>
+        </section>
+        &copy; 2018 &nbsp; | &nbsp; Weather &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="index.html">Home</a>
+        <!-- Will return user to main page, but for now goes to index! -->
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/navBar.js"></script>
+    <script src="js/zipCode.js"></script>
+    <script src="js/json.js"></script>
+</body>
+
+</html>
