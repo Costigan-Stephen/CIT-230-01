@@ -1,5 +1,5 @@
 function myZipFunction(x) {
-    
+
     var weatherobject = new XMLHttpRequest();
     var zip = x;
 
@@ -12,7 +12,7 @@ function myZipFunction(x) {
 
     weatherobject.open('GET', protocol + '//api.openweathermap.org/data/2.5/weather?zip=' + zip + ',us&appid=bcaeef7f3f256798406a93ab87aa490d&units=imperial', true);
 
-    
+
 
     weatherobject.send();
 
@@ -30,6 +30,8 @@ function myZipFunction(x) {
         var iconcode = weatherInfo.weather[0].icon;
         var icon_path = protocol + "//openweathermap.org/img/w/" + iconcode + ".png";
         document.getElementById('weather_icon').src = icon_path;
+        
+        windChill(weatherInfo.wind.speed , weatherInfo.main.temp_max , weatherInfo.main.temp_min);
     }
 
 }
@@ -49,12 +51,26 @@ function indexZip() {
     }
 }
 
+function windChill(wind, high, low) {
+    // INPUT VARIABLES
+    var ws = parseFloat(wind); //Wind Speed
+    var th = parseFloat(high); //Air Temparature
+    var tl = parseFloat(low); //Air Temparature
+
+    // MATH PORTION
+    var t = (th + tl) / 2;
+    var s = Math.pow(ws, 0.16);
+    var f = 35.74 + (0.6215 * t - 35.75 * s) + (0.4275 * t * s); //Wind Chill Factor Formula
+
+    document.getElementById("windChill").innerHTML = Math.round(f * 10) / 10 + '°F';
+}
+
 var pName = document.getElementById('pagename').innerHTML;
 
-if (pName == "Greenville Weather"){ 
-    myZipFunction("63944"); 
-}else if(pName == "Franklin Weather"){ 
-    myZipFunction("65250"); 
-}else if(pName == "Springfield Weather"){ 
-    myZipFunction("65802"); 
+if (pName == "Greenville Weather") {
+    myZipFunction("63944");
+} else if (pName == "Franklin Weather") {
+    myZipFunction("65250");
+} else if (pName == "Springfield Weather") {
+    myZipFunction("65802");
 }
