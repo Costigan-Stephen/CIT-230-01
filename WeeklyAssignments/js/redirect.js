@@ -11,7 +11,7 @@ function redirect(x){
             window.location.href = 'springfield.html';
             break;
         case "home":
-            window.location.href = 'index.html';
+            window.location.href = 'index2.html';
             break;
         case "storm":
             window.location.href = 'stormcenter.html';
