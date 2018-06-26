@@ -51,6 +51,13 @@ h3 {
     z-index:99;
 }
 
+.icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -20;
+}
+
 /* --------------- FOOTER ------------------------*/
 
 footer { /* Fixed footer, stays on bottom where I want it.  */
