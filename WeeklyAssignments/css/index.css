@@ -5,12 +5,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 
 * { 
     margin: 0; 
     box-sizing: border-box;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
 } 
 
 /* --------------- HIDE ------------------------*/
@@ -79,7 +79,7 @@ h2 {
 }
 
 h3, .h3 {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.3rem ;
     text-align: center;
     font-size: 1.2rem ;
@@ -148,15 +148,20 @@ footer a{
 
 /* --------------- MULTIPLE ----------------------*/
 
+
 header, main, footer {
-    max-width:  100%;
+    max-width:  100% /*(px = pixel is a unit of measure)  */;
 }
 
 header, footer, footer a {
-    position: fixed;
+
     text-align: center;
     color: whitesmoke;
     z-index:99;
+}
+
+header{
+    position: fixed;
 }
 
 /* --------------- CONTAINERS --------------------------*/
@@ -182,7 +187,7 @@ body {
     padding-top: 40px; /* compensates for fixed header/nav bar */
     font-size: 16px; 
     line-height: 32px;
-    font-family: Ubuntu, sans-serif ;
+    font-family: 'Raleway', sans-serif;
     color: #000 ;
     margin-left: auto;
     margin-right: auto;

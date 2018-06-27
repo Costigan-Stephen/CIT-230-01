@@ -10,7 +10,7 @@
 * { 
     margin: 0; 
     box-sizing: border-box;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+/*    font-family: 'Yanone Kaffeesatz', sans-serif;*/
 } 
 
 /* --------------- HEADER/HEADINGS ---------------*/
@@ -63,7 +63,7 @@ h3 {
 footer { /* Fixed footer, stays on bottom where I want it.  */
     font-size: 12px;
     background-color: #21314f;
-    position: fixed;
+/*    position: static;*/
     left: 0;
     bottom: 0;
     width: 100%;
@@ -78,7 +78,7 @@ footer a{
 .contact { /* Fixed above footer */
     font-size: 12px;
     background-color: #4465a2;
-    position: fixed;
+/*    position: relative;*/
     left: 0;
     bottom: 31px;
     width: 100%;
@@ -94,10 +94,13 @@ header, main, footer {
 }
 
 header, footer, footer a {
-    position: fixed;
     text-align: center;
     color: whitesmoke;
     z-index:99;
+}
+
+header{
+    position: fixed;
 }
 
 /* --------------- BODY --------------------------*/

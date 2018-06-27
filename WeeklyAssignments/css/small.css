@@ -1,18 +1,30 @@
 /* SMALL */
-@media only screen and (min-width: 0em ) and (max-width: 37em ){ 
+
+@media only screen and (min-width: 0em) and (max-width: 37em) {
     /* The side navigation menu */
     .sidenav {
-        height: 100%; /* 100% Full-height */
-        width: 0; /* 0 width - change this with JavaScript */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
+        height: 100%;
+        /* 100% Full-height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
         left: 0;
-        background-color: #111; /* Black*/
-        overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 60px; /* Place content 60px from the top */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        background-color: #111;
+        /* Black*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
     }
+    
+    
 
     /* The navigation menu links */
     .sidenav a {
@@ -38,50 +50,57 @@
         font-size: 36px;
         margin-left: 50px;
     }
-    
+
     .heading {
         margin-top: -30px;
-        font-size:  3rem /* (rem is a unit of measure) */;
-        text-shadow: 1px 1px 2px #006666; 
+        font-size: 2.5rem/* (rem is a unit of measure) */
+        ;
+        text-shadow: 1px 1px 2px #006666;
         z-index: 12;
     }
-    
+
     main {
         display: block
     }
-    
+
     header img {
         left: 30px;
         width: 70px;
         height: 50px;
         z-index: 11;
     }
-    
+
     .headBack {
         height: 65px;
         width: 100%;
         z-index: 10;
     }
-    
+
     .icon {
         text-align: left;
         color: #000;
-        font-size:38px;
-        cursor:pointer;
+        font-size: 38px;
+        cursor: pointer;
         margin-top: 28px;
         margin-left: 28px;
-        position:relative;
-        top:-10px;
-        right:-10px;
-        left:-10px;
-        bottom:-10px;
+        position: relative;
+        top: -10px;
+        right: -10px;
+        left: -10px;
+        bottom: -10px;
         float: left;
-        z-index:20;
+        z-index: 20;
     }
-    
-    .sidenav {padding-top: 15px; z-index:18;}
-    .sidenav a {font-size: 18px; z-index:18;}
-    
+
+    .sidenav {
+        padding-top: 15px;
+        z-index: 18;
+    }
+    .sidenav a {
+        font-size: 18px;
+        z-index: 18;
+    }
+
     #content-mobile {
         display: block;
         visibility: visible;
@@ -93,14 +112,14 @@
         visibility: hidden;
         font-size: 0;
     }
-    
+
     .navBar a {
         display: none;
         visibility: hidden;
         font-size: 0;
     }
-    
-    .galleryImages{
+
+    .galleryImages {
         align-content: center;
         display: inline-grid;
         grid-template-columns: 1fr;
@@ -108,22 +127,23 @@
         grid-gap: 20px;
         padding-bottom: 150px;
     }
-    
-    .galleryImages img{
+
+    .galleryImages img {
         box-shadow: none;
         width: 90%;
         height: auto;
         margin-right: auto;
         margin-left: auto;
-        
+
     }
-    
-    body { 
-        padding-top: 40px; /* compensates for fixed header/nav bar */
+
+    body {
+        padding-top: 40px;
+        /* compensates for fixed header/nav bar */
         margin-top: 45px;
         padding-bottom: 0px;
     }
-    
+
     .desktop {
         margin: 0;
         border: 0px solid black;
@@ -131,19 +151,20 @@
         visibility: hidden;
         font-size: 0;
     }
-    
-    aside { /* Goes with .rightImage */
+
+    aside {
+        /* Goes with .rightImage */
         float: right;
         right: 0;
         width: auto;
         padding-left: 0px;
         z-index: -5;
         padding-right: 0px;
-    }  
-    
-    .rightImg{
+    }
+
+    .rightImg {
         z-index: 1;
-        position:relative;
+        position: relative;
         float: none;
         padding: 0;
         width: 100%;
@@ -151,8 +172,8 @@
         margin-left: auto;
         height: auto;
     }
-    
-    section { 
+
+    section {
         overflow: auto;
         border-bottom-color: white;
         border-bottom-style: solid;
@@ -161,8 +182,8 @@
         width: 100%;
         margin: auto;
     }
-    
-    article{
+
+    article {
         float: left;
         padding: 0;
         text-align: justify;
@@ -171,9 +192,25 @@
         object-position: center;
         object-fit: cover;
     }
-    
-    .endSpace { 
-        border-color: rgba(0,0,0,0);
-        
+
+    .endSpace {
+        border-color: rgba(0, 0, 0, 0);
+
+    }
+
+    .gridAlign {
+        align-content: center;
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    }
+
+    .contact {
+        bottom: 61px;
+        font-size: 12px;
+        left: 0;
+        width: 100%;
+        font-size: 14px;
     }
 }
