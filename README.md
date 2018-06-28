@@ -5,7 +5,6 @@ Spring 2018 Web Front End Development
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>CIT 230 Assignment Portal | Stephen J. Costigan | BYU-Idaho</title>
         <meta name="description" content="Assignment portal page for Stephen Costigan in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -15,9 +14,6 @@ Spring 2018 Web Front End Development
             <img src="images/profile.jpg" width="200" height="273" alt="My Profile Picture">
             <h1>Stephen J. Costigan</h1>
         </header>
-        <nav>
-            <!-- Will add a main menu here in future! -->
-        </nav>
         <main>
             <h2>CIT 230 - Assignment Portal</h2>
             <li>Lesson 01: <a href="basicpage.html">BasicPage</a></li>
@@ -32,10 +28,5 @@ Spring 2018 Web Front End Development
             <li>Lesson 09: <a href="/WeeklyAssignments/heroes.html">JSON - Heroes</a></li>
             <li>Lesson 09: <a href="/WeeklyAssignments/index2.html">Weather Site</a></li>
             <li>Lesson 10: <a href="/weathersite/index2.html">Completed Weather Site</a></li>
-
         </main>
-        <footer>
-            <p>&copy; 2018 | Stephen Costigan | Tennessee | <a href="http://byui.edu/online">BYU-Idaho Online Learning</a></p>
-        </footer>
-    </body>
 </html>
