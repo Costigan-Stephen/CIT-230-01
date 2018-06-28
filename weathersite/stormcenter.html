@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="pagename">Storm Center</title>
+    <meta name="description" content="Franklin has weather, hear it here first!">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/storm.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <script src="js/formCheck.js"></script>
+    <script src="js/redirect.js"></script>
+</head>
+
+<body>
+    <picture class="backImg">
+        <source media="(min-width:2201px)" srcset="images/storm/tornado-original.jpg">
+        <source media="(max-width:2200px) and (min-width:1801px)" srcset="images/storm/tornado-large.jpg">
+        <source media="(max-width:1800px) and (min-width:901px)" srcset="images/storm/tornado-medium.jpg">
+        <source media="(max-width:900px)" srcset="images/storm/tornado-small.jpg">
+        <img src="images/storm/tornado-large.jpg" alt="Background">
+    </picture>
+
+    <header class="headBack">
+        <img src="images/cloud.png" alt="Cloudy">
+        <h1 class="heading">Storm Center</h1>
+        <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
+    </header>
+
+    <div includefile="nav.html"></div>
+
+    <main class="main">
+        <section class="story" includefile="form.html"></section>
+    </main>
+    
+    <footer>
+        <section class="contact" includefile="footer.html"></section>
+        &copy; 2018 &nbsp; | &nbsp; Your Weather &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="javascript:redirect('home');">Home</a>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/navBar.js"></script>
+    <script src="js/include.js">include();</script>
+</body>
+
+</html>

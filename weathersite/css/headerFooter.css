@@ -1,0 +1,127 @@
+/* --------------- HEADER/HEADINGS ---------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    padding-top: 50px;
+    font-size:  4rem /* (rem is a unit of measure) */;
+    color:  #000 ;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.3rem ;
+    text-align: center;
+    border-bottom: 3px solid #000;
+}
+
+h3, .h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem ;
+    text-align: center;
+    font-size: 1.2rem ;
+}
+
+h4 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size:  4rem /* (rem is a unit of measure) */;
+    color:  #000 ;
+    text-align: center;
+    padding: 2px;
+}
+
+.heading {
+    margin-top: -10px;
+    font-size:  4rem;
+    color:  #000 ;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 3px #006666; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.icon{
+    display: none;
+}
+
+.white {
+    color: rgb(255,255,255);
+}
+
+.black {
+    color: rgb(0,0,0);
+}
+
+/* --------------- FOOTER ------------------------*/
+
+footer { /* Fixed footer, stays on bottom where I want it.  */
+    
+    font-size: 12px;
+    background-color: #21314f;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.contact { /* Fixed above footer */
+    
+    font-size: 12px;
+    background-color: rgba(68, 101, 162, 0.7);
+    left: 0;
+    bottom: 31px;
+    width: 100%;
+    font-size: 14px;
+    LINE-HEIGHT:20px;
+    font-family: Ubuntu, sans-serif ;
+}
+
+nav{
+    z-index: 99;
+    align-content: center;
+}
+
+.currentNav {
+    color:aqua;
+    background-color: black;
+}
+
+.currentSide {
+    color:aqua;
+}
+
+/* --------------- MULTIPLE ----------------------*/
+
+
+header, main, footer {
+    max-width:  100% /*(px = pixel is a unit of measure)  */;
+}
+
+header, footer, footer a {
+    text-align: center;
+    color: whitesmoke;
+}
+
+header{
+    position: fixed;
+}
+
