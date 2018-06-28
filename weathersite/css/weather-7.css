@@ -144,20 +144,6 @@ tr:nth-child(even) {
 
 /* --------------- BACKGROUND -------------------*/
 
-.backImg{
-    height: 100%;
-    background-size: cover;
-    background-repeat:repeat-y;
-    background-position: center center;
-    
-    position: fixed;
-    display: inline-block;
-    
-    z-index: -50;
-    top: 60px;
-    padding: 0px;
-}
-
 .headBack {
     background-color: rgba(204, 255, 255, 1); /* light blue (#CCFFFF) with opacity/alpha level (a) at the end */
     height: 85px;

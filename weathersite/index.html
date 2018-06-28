@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/small.css">
@@ -17,24 +18,27 @@
     <script src="js/json.js"></script>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+    
     <picture class="backImg">
         <source media="(min-width:2201px)" srcset="images/main/coast-original.jpg">
         <source media="(max-width:2200px) and (min-width:1801px)" srcset="images/main/coast-large.jpg">
         <source media="(max-width:1800px) and (min-width:901px)" srcset="images/main/coast-medium.jpg">
         <source media="(max-width:900px)" srcset="images/main/coast-small.jpg">
         <img src="images/main/coast-large.jpg" alt="Background">
-    </picture>
-
+    </picture>    
+        
     <header class="headBack">
         <img src="images/cloud.png" alt="current weather" id="weather_icon">
         <h1 class="heading">Weather</h1>
         <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
     </header>
-
+        
     <div includefile="nav.html"></div>
+    
+    <div id="loader"><div id="myBar"></div></div>
 
-    <main class="main">
+    <main style="display:none;" class="main animate-bottom" id="myDiv">
         <section class="story white center">
             <h4 class="white">Forecast</h4>
             <h2>Enter your ZIP code below</h2>
@@ -86,16 +90,18 @@
         </section>
         <section class="endSpace"><p>&nbsp;<br><br></p></section>
     </main>
-    <footer>
-        <section class="contact" includefile="footer.html"></section>
-        &copy; 2018 &nbsp; | &nbsp; Your Weather &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="javascript:redirect('home');">Home</a>
-    </footer>
     
+    <footer id="footer" style="display:none;" class="animate-bottom">
+        <section class="contact" includefile="footer.html"></section>
+        &copy; 2018 Your Weather &nbsp; | &nbsp; <a href="javascript:redirect('home');">Home</a> &nbsp; | &nbsp; <span id="date"></span> &nbsp;
+    </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/navBar.js"></script>
     <script src="js/zipCode.js"></script>
     <script src="js/json.js"></script>
     <script src="js/include.js">include();</script>
+    <script src="js/loader.js"></script>
+
 </body>
 
 </html>

@@ -118,10 +118,28 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
+    text-overflow: wrap;
     color: whitesmoke;
 }
 
 header{
     position: fixed;
 }
+
+/* --------------- BACKGROUND -------------------*/
+
+.backImg{
+    height: 100%;
+    background-size: cover;
+    background-repeat:repeat-y;
+    background-position: center center;
+    
+    position: fixed;
+    display: inline-block;
+    
+    z-index: -50;
+    top: 0px;
+    padding: 0px;
+}
+
 
