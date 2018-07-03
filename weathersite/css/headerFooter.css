@@ -118,7 +118,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    text-overflow: wrap;
+    text-overflow: ellipsis;
     color: whitesmoke;
 }
 
