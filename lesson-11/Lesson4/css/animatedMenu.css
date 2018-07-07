@@ -4,7 +4,7 @@ body, html {
 	position:relative
 }
 
-.navigation {
+.navigation2 {
 	position: relative;
 	left: 0px;
 	padding: 0px;
@@ -16,7 +16,7 @@ body, html {
 	height: 97px;
 }
 
-.navigation > li {
+.navigation2 > li {
 	position: relative;
 	background: rgba(0,0,0,0.2);
 	width: 150px;

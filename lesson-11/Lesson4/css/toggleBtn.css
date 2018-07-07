@@ -1,8 +1,8 @@
-.container {
-	position:absolute;
+.container1 {
+	position:relative;
 	width:480px;
 	height:25px;
-	top:0px;
+	top:60px;
 	bottom:0px;
 	left:0px;
 	right:0px;

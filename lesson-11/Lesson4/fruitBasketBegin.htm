@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Fruit Basket</title>
-	<link rel="stylesheet" href="css/fruitBasket.css">
-	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script>
+    <meta charset="UTF-8">
+    <title>Alcove Digital Systems</title>
+    <link rel="stylesheet" href="css/fruitBasket.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
 	$(function(){
 		// Array containing Objects with Fruit names & quantities
 		var fruitBasket = [	{title:'Apples', quantity:20},
@@ -27,12 +29,42 @@
 	})
 	</script>
 </head>
+
 <body>
-<div class="container">
-	<ul class="fruits">
-		
-		
-	</ul>
-</div>
+    <!-- Master Container Div -->
+    <div class="container">
+        <!-- Header Div containing the Logo & Navigation Links -->
+        <div class="header">
+            <div class="logo" id="alcoveLogo"></div>
+            <div class="navbar">
+                <ul class="navigation">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Content Div -->
+        <div class="content">
+            <div class="container1">
+                <ul class="fruits"></ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a> |
+                <span class="right">
+                <a href="./InsertHTMLBegin.htm">Insert HTML</a> | 
+                <a href="./animatedMenuBegin.htm">Animated Menu</a> | 
+                <a href="./toggleButtonBegin.htm">Toggle Buttons</a> | 
+                <a href="./DropDownMenuBegin.htm">Drop Down Menu</a> | 
+                <a href="./fruitBasketBegin.htm">Fruit Basket</a>
+            </span></h5>
+        </div>
+    </div>
 </body>
+
 </html>

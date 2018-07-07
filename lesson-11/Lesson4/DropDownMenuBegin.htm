@@ -1,77 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Dropdown Menu</title>
-	<link rel="stylesheet" href="css/dropdownmenu.css">
-	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script>
-	$(function(){
-		// All jQuery code goes here
-		
-//        $('.dropdownMenu > li').hover( function(){
-//            // Mouse Over
-//            $(this).children("ul").slideDown(200);
-//        }, function(){
-//            // Mouse Exit
-//            $(this).children("ul").slideUp(200);
-//        })
-        
-        $('.dropdownMenu > li').hover(function(){
-            $(this).children("ul").slideToggle(200);
-        })
-        
-        $('.dropdownMenu > li > ul > li').hover(function(){
-            // Mouse Over
-            $(this).css({
-                'background-color': 'rgb(178, 244, 255)', 
-                'color': 'rgb(255, 255, 255)'
-                });
-        }, function(){
-            // Mouse Exit
-            $(this).css({
-                'background-color': 'rgb(240, 240, 240)',
-                'color': 'rgb(0, 0, 0)'
-                });
-        })
-        
-	})
-	</script>
+    <meta charset="UTF-8">
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="css/dropdownmenu.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+
+
+    </script>
 </head>
+
 <body>
-<ul class="dropdownMenu">
-		<li>Apples
-			<ul>
-				<li>Jam</li>
-				<li>Pie</li>
-				<li>Cider</li>
-			</ul>
-		</li>
-		<li>Oranges
-			<ul>
-				<li>Squash</li>
-				<li>Chocolate</li>
-			</ul>
-		</li>
-		<li>Peaches
-			<ul>
-				<li>Jam</li>
-				<li>Juice Concentrate</li>
-			</ul>
-		</li>
-		<li>Strawberries
-			<ul>
-				<li>Jam</li>
-				<li>Crush</li>
-				<li>Cake</li>
-			</ul>
-		</li>
-		<li>Kiwi
-			<ul>
-				<li>Crush</li>
-			</ul>
-		</li>
-</ul>
+
 
 </body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alcove Digital Systems</title>
+    <link rel="stylesheet" href="css/dropdownmenu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function() {
+            // All jQuery code goes here
+
+            //        $('.dropdownMenu > li').hover( function(){
+            //            // Mouse Over
+            //            $(this).children("ul").slideDown(200);
+            //        }, function(){
+            //            // Mouse Exit
+            //            $(this).children("ul").slideUp(200);
+            //        })
+
+            $('.dropdownMenu > li').hover(function() {
+                $(this).children("ul").slideToggle(200);
+            })
+
+            $('.dropdownMenu > li > ul > li').hover(function() {
+                // Mouse Over
+                $(this).css({
+                    'background-color': 'rgb(178, 244, 255)',
+                    'color': 'rgb(255, 255, 255)'
+                });
+            }, function() {
+                // Mouse Exit
+                $(this).css({
+                    'background-color': 'rgb(240, 240, 240)',
+                    'color': 'rgb(0, 0, 0)'
+                });
+            })
+
+        })
+
+    </script>
+</head>
+
+<body>
+    <!-- Master Container Div -->
+    <div class="container">
+        <!-- Header Div containing the Logo & Navigation Links -->
+        <div class="header">
+            <div class="logo" id="alcoveLogo"></div>
+<!--
+            <div class="navbar">
+                <ul class="navigation">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+-->
+        </div>
+        <!-- Content Div -->
+        <div class="content">
+            <div class="container1">
+            <ul class="dropdownMenu">
+                <li>Apples
+                    <ul>
+                        <li>Jam</li>
+                        <li>Pie</li>
+                        <li>Cider</li>
+                    </ul>
+                </li>
+                <li>Oranges
+                    <ul>
+                        <li>Squash</li>
+                        <li>Chocolate</li>
+                    </ul>
+                </li>
+                <li>Peaches
+                    <ul>
+                        <li>Jam</li>
+                        <li>Juice Concentrate</li>
+                    </ul>
+                </li>
+                <li>Strawberries
+                    <ul>
+                        <li>Jam</li>
+                        <li>Crush</li>
+                        <li>Cake</li>
+                    </ul>
+                </li>
+                <li>Kiwi
+                    <ul>
+                        <li>Crush</li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a> |
+                <span class="right">
+                <a href="./InsertHTMLBegin.htm">Insert HTML</a> | 
+                <a href="./animatedMenuBegin.htm">Animated Menu</a> | 
+                <a href="./toggleButtonBegin.htm">Toggle Buttons</a> | 
+                <a href="./DropDownMenuBegin.htm">Drop Down Menu</a> | 
+                <a href="./fruitBasketBegin.htm">Fruit Basket</a>
+            </span></h5>
+        </div>
+    </div>
+</body>
+
 </html>

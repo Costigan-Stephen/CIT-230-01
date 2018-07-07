@@ -21,7 +21,7 @@ body {
 .container {
 	position:relative;
 	width:960px;
-	height:770px;
+	height:785px;
 	margin:auto;
 	background:rgba(255,255,255,0.5);
 	box-shadow: 1px 1px 20px rgba(0,0,0,0.45);
@@ -78,7 +78,7 @@ body {
 
 .content {
 	position:relative;
-	height:669px;
+	height:679px;
 }
 
 .headImage {
@@ -156,7 +156,7 @@ body {
 .contentBoxes {
 	position:relative;
 	width:958px;
-	height:365px;
+	height:375px;
 	top:350px;
 }
 
@@ -166,7 +166,7 @@ body {
 	float:left;
 	width:305px;
 	margin:2px;
-	height:300px;
+	height:310px;
 	padding:5px;
 	border-top:4px solid rgba(0,0,0,0.2);
 }
@@ -258,12 +258,16 @@ body {
 }
 
 .footer {
+    text-align: center;
+    margin-top: 10px;
 	position:relative;
 	height:30px;
-	background:rgba(0, 167, 255, 0.86);
+	background:rgba(0, 167, 155, 0.86);
 }
 
+
 .footer h5 {
+    
 	position: absolute;
 	top: 8px;
 	left: 7px;
@@ -276,6 +280,12 @@ body {
 	text-decoration: none;
 	font-weight: normal;
 	color:inherit;
+}
+
+.right {
+	text-align: right;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
