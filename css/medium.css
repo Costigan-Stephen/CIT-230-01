@@ -1,17 +1,27 @@
 /* MEDIUM */
-@media only screen and (min-width: 37em ) and (max-width: 64em ){ 
+
+@media only screen and (min-width: 37em) and (max-width: 64em) {
     /* The side navigation menu */
     .sidenav {
-        height: 100%; /* 100% Full-height */
-        width: 0; /* 0 width - change this with JavaScript */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
+        height: 100%;
+        /* 100% Full-height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
         left: 0;
-        background-color: #111; /* Black*/
-        overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 60px; /* Place content 60px from the top */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        background-color: #111;
+        /* Black*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
     }
 
     /* The navigation menu links */
@@ -37,62 +47,39 @@
         font-size: 36px;
         margin-left: 50px;
     }
-    
+
     .heading {
         margin-top: -10px;
-        font-size:  4rem /* (rem is a unit of measure) */;
+        font-size: 4rem/* (rem is a unit of measure) */
+        ;
     }
-    
+
     header img {
-        left: 36px;
+        left: 6px;
     }
-    
+
     .icon {
         text-align: left;
-        font-size:38px;
-        cursor:pointer;
+        font-size: 38px;
+        cursor: pointer;
         margin-top: 35px;
         margin-left: 25px;
-        position:relative;
-        top:-10px;
-        right:-10px;
-        left:-10px;
-        bottom:-10px;
+        position: relative;
+        top: -10px;
+        right: -10px;
+        left: -10px;
+        bottom: -10px;
         float: left;
-        z-index:40;
+        z-index: 40;
         visibility: hidden;
 
-        text-shadow: 
-            -2px -2px 0px #006666, 
-            2px -2px 0px #006666, 
-            -2px 2px 0px #006666, 
-            2px 2px 0px #006666;
-    }
-    
-    .navBar {
-        font-family: 'Rajdhani', sans-serif;
-
-        width: 100%;
-        display: block;
-        text-align: center;
-        background-color: #003c66;
-        color: #FFF;
-        position: fixed;
-        top: 85px;
-        left: 0;
+        text-shadow: -2px -2px 0px #006666,
+        2px -2px 0px #006666,
+        -2px 2px 0px #006666,
+        2px 2px 0px #006666;
     }
 
-    .navBar a{
-        text-decoration: none;
-        color: #FFF;
-        padding: 7px;
-    }
-
-    .navBar a:hover{
-        background-color: #0068b3;
-    }
-    
-    .galleryImages{
+    .galleryImages, HomeImages {
         align-content: center;
         display: inline-grid;
         grid-template-columns: 1fr 1fr;
@@ -100,8 +87,17 @@
         grid-gap: 20px;
     }
     
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .HomeImages img{
+        width: 90%;
+        height: auto;
+    }
+    
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
     #content-mobile {
         display: block;
         visibility: visible;
@@ -113,15 +109,30 @@
         visibility: hidden;
         font-size: 0;
     }
-    
-    body { 
-        padding-top: 135px; /* compensates for fixed header/nav bar */
-        padding-bottom: 0px; 
+
+    body {
+        padding-top: 135px;
+        /* compensates for fixed header/nav bar */
+        padding-bottom: 0px;
         margin-top: 5px;
     }
+
+    .endSpace {
+        border-color: rgba(0, 0, 0, 0);
+
+    }
+
+    .searchbar {
+        width: 100%;
+        grid-template-columns: 0fr 4fr;
+    }
     
-    .endSpace { 
-        border-color: rgba(0,0,0,0);
-        
+    .contact-info{
+        margin-left: 20%;
+        margin-right: 20%
+    }
+    
+    .image{
+        width:50%;
     }
 }

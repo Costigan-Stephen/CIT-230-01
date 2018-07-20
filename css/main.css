@@ -117,7 +117,8 @@ p {
 
 footer { /* Fixed footer, stays on bottom where I want it.  */
     font-size: 12px;
-    background-color: 21314f;
+    background-color: #21314f;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
