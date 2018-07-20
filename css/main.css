@@ -115,10 +115,10 @@ p {
     padding: 40px;
 }
 
-footer { /* Fixed footer, stays on bottom where I want it.  */
+footer { 
     font-size: 12px;
     background-color: #21314f;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
