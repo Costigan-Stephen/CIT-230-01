@@ -1,0 +1,329 @@
+/* SMALL */
+
+@media only screen and (max-width: 37em) {
+    /* The side navigation menu */
+    .sidenav {
+        height: 100%;
+        /* 100% Full-height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        left: 0;
+        background-color: #111;
+        /* Black*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        font-family: 'Rajdhani', sans-serif;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .heading {
+        margin-top: -30px;
+        font-size: 2.5rem/* (rem is a unit of measure) */;
+        text-shadow: 1px 1px 2px #006666;
+        z-index: 12;
+    }
+
+    main {
+        display: block
+    }
+
+    header img {
+        left: 30px;
+        width: 70px;
+        height: 50px;
+        z-index: 11;
+    }
+
+    .headBack {
+        height: 65px;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .icon {
+        display: block;
+        text-align: left;
+        color: #fff;
+        font-size: 38px;
+        cursor: pointer;
+        margin-top: 28px;
+        margin-left: 28px;
+        position: relative;
+        top: -10px;
+        right: -10px;
+        left: -10px;
+        bottom: -10px;
+        float: left;
+        z-index: 20;
+    }
+
+    .sidenav {
+        padding-top: 15px;
+        z-index: 18;
+    }
+    .sidenav a {
+        font-size: 18px;
+        z-index: 18;
+    }
+
+    #content-mobile {
+        display: block;
+        visibility: visible;
+        font-size: inherit;
+    }
+
+    #content-desktop {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    .navBar a {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    .galleryImages {
+        align-content: center;
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        padding-bottom: 150px;
+    }
+
+    .galleryImages img {
+        box-shadow: none;
+        width: 90%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    body {
+        padding-top: 120px;
+        /* compensates for fixed header/nav bar */
+        margin-top: 45px;
+        padding-bottom: 0px;
+    }
+
+    .desktop {
+        margin: 0;
+        border: 0px solid black;
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    aside {
+        /* Goes with .rightImage */
+        float: right;
+        right: 0;
+        width: auto;
+        padding-left: 0px;
+        z-index: -5;
+        padding-right: 0px;
+    }
+
+    .rightImg {
+        z-index: 1;
+        position: relative;
+        float: none;
+        padding: 0;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        height: auto;
+    }
+
+    section {
+        overflow: auto;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        z-index: -12;
+        width: 100%;
+        margin: auto;
+    }
+
+    article {
+        float: left;
+        padding: 0;
+        text-align: justify;
+        padding-left: 0;
+        padding-right: 0;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .endSpace {
+        border-color: rgba(0, 0, 0, 0);
+
+    }
+
+    .gridAlign {
+        align-content: center;
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    }
+
+    .contact {
+        bottom: 61px;
+        font-size: 12px;
+        left: 0;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .storyAlt {
+        display: grid;
+        float: left;
+        text-align: justify;
+        width: 100%;
+        border-color: rgba(0, 0, 0, 0);
+    }
+
+    .events {
+        text-align: center;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.3rem;
+        text-align: center;
+        border: 1px solid black;
+        background-color: rgba(15, 15, 15, 0.8);
+        color: #FFF;
+    }
+
+    .searchText {
+        width: 70%;
+    }
+
+    .searchbar {
+        margin-top: 34px;
+        position: absolute;
+        width: 100%;
+        display: block;
+    }
+
+    .headBack {
+        height: 160px;
+    }
+
+    .schButton {
+        width: 50px;
+    }
+
+    .headBack {
+        width: 100%;
+    }
+
+    header img {
+        top: -30px;
+        left: 25%;
+        margin-left: 5%;
+        margin-right: 5%;
+        object-position: center;
+        position: absolute;
+        width: 140px;
+        height: 85px;
+    }
+    
+    h1, h4 {
+        line-height: 55px;
+    }
+    
+    .map{
+        padding: 0%;
+        margin-left 2px;
+        margin-right 2px;
+    }
+    
+    .feed-item-desc{
+        padding: 0%;
+        margin-left 2px;
+        margin-right 2px;
+    }
+    
+    form .gridIn{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #Form1{
+        margin: 0px;
+    }
+    
+    th, td {
+        text-align: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+    
+    .contact-info{
+        margin: auto;
+    }
+    
+    .image{
+        width:100%;
+    }
+    
+    .HomeImages {
+        align-content: center;
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        padding-bottom: 150px;
+    }
+
+    .HomeImages img {
+        box-shadow: none;
+        width: 90%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    
+}
+

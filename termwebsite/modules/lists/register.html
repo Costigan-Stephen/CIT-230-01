@@ -1,0 +1,21 @@
+<form name="processedForm" method="get" id="Form1" action="thankyou.html">
+    <h2 class="formHead">REGISTRATION FORM</h2>
+
+    <span class="gridIn">Your Full Name*:<input type="text" id="name" name="name" pattern="[A-za-z ]{5}" title="Please enter a valid name" required></span><br>
+    <span class="gridIn">Email Address:<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="xxxxx@xxx.xx"></span><br>
+
+    <span class="gridIn">Phone Number*:<input id="bar" placeholder="(123) 456-7890" type="text" name="txtInput" onkeydown="javascript:backspacerDOWN(this,event);" onkeyup="javascript:backspacerUP(this,event);"></span><br>
+    <span class="gridIn">Zip Code:<input type="number" id="zip" name="zip" onKeyDown="limitText(this,5)"></span><br>
+    <span class="gridIn">City<input type="text"></span><br>
+    <span class="gridIn">State<input type="text"></span><br>
+    <span class="gridIn">Date of Birth*:<input type="date" id="dateEntry" name="date" required></span><br>
+    <span class="gridIn">Experience Level [1-10]<input type="range" name="Severity" min="1" max="10" value="1"></span><br> 
+    <span>Special Accomodations</span><br>
+    <textarea name="comment" form="Form1" rows="4" cols="50" class="forms">Enter text here...</textarea><br>
+    
+    
+
+    <input id="Submit" type="submit" value="Submit" name="Submit1" class="submit">
+    <span class="footnote">*Required Field</span>
+
+</form>

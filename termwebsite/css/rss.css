@@ -1,0 +1,46 @@
+
+/*RSS TITLE*/
+.feed-item-title{
+   font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 1.4rem; 
+    margin-bottom: 5px;
+/*    background-color: rgba(0, 0, 0, 0.7);*/
+    border-bottom: 1px solid rgb(0,0,255);
+    
+    
+}
+
+.feed-item-title a {
+    color: rgb(0,0,0);  
+    text-decoration: none;
+    width: 100%;
+    text-transform:uppercase;
+}
+
+.feed-item-title a:hover {
+    color: rgb(255,0,0);  
+}
+
+.feed-item-desc{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1rem; 
+     margin-bottom: 55px;
+}
+
+#rss{
+/*    background-color: rgba(10,10,10,0.2);*/
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.rss2html-note{
+    display: none;
+}
+
+.map{
+    padding-left: 10%;
+    padding-right: 10%;
+}

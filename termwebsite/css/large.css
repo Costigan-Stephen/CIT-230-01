@@ -1,0 +1,44 @@
+/* LARGE */
+@media only screen and (min-width: 64em ) { 
+    
+    body{
+        padding-top: 140px;
+    }
+    
+    #content-desktop {
+        display: block;
+        visibility: visible;
+        font-size: inherit;
+    }
+
+    #content-mobile {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    .endSpace { 
+        display: block;
+        float: left;
+        text-align: justify;
+        background-color: inherit;
+        padding: 20px;
+        border-color: rgba(0,0,0,0);
+    }
+    
+    .sidenav {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+    
+    .HomeImages img{
+        width: 90%;
+        height: auto;
+    }
+    
+}

@@ -1,0 +1,13 @@
+<form name="processedForm" method="get" id="Form1" action="javascript:sent();">
+    <h2 class="formHead">CONTACT FORM</h2>
+
+    <span class="gridIn">Your Full Name*:<input type="text" id="name" name="name" pattern="[A-za-z ]{5}" title="Please enter a valid name" required></span><br>
+
+    <span class="gridIn">Phone Number*:<input id="bar" placeholder="(123) 456-7890" type="text" name="txtInput" onkeydown="javascript:backspacerDOWN(this,event);" onkeyup="javascript:backspacerUP(this,event);"></span><br>
+    <span>Your Message*</span><br>
+    <textarea id="textarea" name="comment" form="Form1" rows="4" cols="50" class="forms" placeholder="Enter text here..." required></textarea><br>
+
+    <input id="Submit" type="submit" value="Submit" name="Submit1" class="submit">
+    <span class="footnote">*Required Field</span>
+
+</form>

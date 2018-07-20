@@ -1,0 +1,171 @@
+@media (min-width: 768px) {
+    .departures-group-trip {
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .departures-group-trip {
+        margin-right: -50px;
+        margin-left: -50px;
+    }
+}
+
+.departures-group-trip:before,
+.departures-group-trip:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.departures-group-trip:after {
+    clear: both;
+}
+
+.departure-trip {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 15px 100px;
+    padding: 15px;
+    float: left;
+    -webkit-box-shadow: 10px 11px 23px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 23px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 11px 23px -17px rgba(0, 0, 0, 0.75);
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .departure-trip {
+        width: calc(50% - 60px);
+        margin: 0 30px 100px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .departure-trip {
+        width: calc(33.33% - 100px);
+        margin: 0 50px 100px;
+    }
+}
+
+.departure-trip .cover-image {
+    width: 100%;
+    max-height: 220px;
+    overflow: hidden;
+}
+
+.departure-trip img {
+    width: 100%;
+}
+
+.departure-trip .trip {
+    text-transform: uppercase;
+    font-size: 0.55em;
+    margin-bottom: 15px;
+}
+
+.departure-trip .date {
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    font-size: 0.75em;
+}
+
+
+
+.trip-overview .month {
+    border-bottom: 2px solid #7F7F7F;
+}
+
+.view-trip {
+    float: right;
+    text-transform: none;
+    margin-top: 15px;
+    font-size: 1.8em;
+}
+
+.departure-closed .button-sm-closed {
+    width: 25%;
+    float: left;
+    text-align: right;
+}
+
+.review-entry__date {
+    font-size: 0.6em;
+    font-weight: 200;
+    color: #bbb;
+}
+
+.review-entry__review {
+    border-bottom: 1px solid #bbb;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/G\:\/My\%20Documents\/Websites\/thomsonbiketours\.com\/Website\/source\/sass\/styles\.scss
+    }
+    line {
+        font-family: \0000367
+    }
+}
+
+body.js .js-required {
+    display: block;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/G\:\/My\%20Documents\/Websites\/thomsonbiketours\.com\/Website\/source\/sass\/styles\.scss
+    }
+    line {
+        font-family: \0000371
+    }
+}
+
+.layout-container {
+    max-width: 78.125rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/G\:\/My\%20Documents\/Websites\/thomsonbiketours\.com\/Website\/source\/sass\/susy\/output\/support\/_clearfix\.scss
+    }
+    line {
+        font-family: \0000312
+    }
+}
+
+.layout-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+header .layout-container {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/G\:\/My\%20Documents\/Websites\/thomsonbiketours\.com\/Website\/source\/sass\/styles\.scss
+    }
+    line {
+        font-family: \0000375
+    }
+}
+
+.last {
+    margin-right: 0;
+}
+
+/* -----------------------------------------------SEPARATOR--------------------------------------------------- */
+
+

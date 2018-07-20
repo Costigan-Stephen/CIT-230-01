@@ -1,0 +1,295 @@
+/* --------------- HEADER/HEADINGS ---------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    padding-top: 50px;
+    font-size: 4rem/* (rem is a unit of measure) */
+    ;
+    color: #000;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+h3,
+.h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 4rem/* (rem is a unit of measure) */
+    ;
+    color: #000;
+    text-align: center;
+    padding: 2px;
+}
+
+.heading {
+    margin-top: -10px;
+    font-size: 4rem;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 3px #006666;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+/* --------------- NAV BAR -------------------*/
+
+.navBar {
+    font-family: 'Rajdhani', sans-serif;
+
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    color: #FFF;
+    position: fixed;
+    top: 85px;
+    left: 0;
+}
+
+.return {
+    text-align: left;
+    background-color: rgb(219, 219, 219);
+    color: #000;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+.return a:hover{
+    color: rgb(0, 0, 255);
+}
+
+.navBar a, .return a {
+    text-decoration: none;
+    color: inherit;
+    padding: 7px;
+}
+
+.allowHover:hover{
+    background-color: rgb(41, 99, 209);
+}
+
+/*
+.navBar a:hover{
+    background-color: #0068b3;
+}
+*/
+
+nav {
+    z-index: 99;
+    align-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+}
+
+.currentNav {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.currentSide {
+    color: rgb(255, 255, 255);
+}
+
+/*Hamburger icon*/
+.icon {  
+    display: none;
+}
+
+.sticky {  
+    position: sticky; 
+    position: -webkit-sticky; 
+    top: 110px; 
+    z-index: 40;
+}
+
+/* --------------- FOOTER ------------------------*/
+
+footer {
+    /* Fixed footer, stays on bottom where I want it.  */
+    font-size: 12px;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.contact {
+    /* Fixed above footer */
+    font-size: 12px;
+    background-color: rgb(66, 69, 73);
+    left: 0;
+    bottom: 31px;
+    width: 100%;
+    font-size: 14px;
+    LINE-HEIGHT: 25px;
+    padding: 10px;
+    font-family: Ubuntu, sans-serif;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+/* --------------- MULTIPLE ----------------------*/
+
+header,
+main,
+footer {
+    max-width: 100%/*(px = pixel is a unit of measure)  */
+    ;
+}
+
+header,
+footer,
+footer a {
+    text-align: center;
+    text-overflow: ellipsis;
+    color: whitesmoke;
+}
+
+header {
+    position: fixed;
+}
+
+/* --------------- BACKGROUND -------------------*/
+
+.backImg {
+    height: 100%;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center center;
+
+    position: fixed;
+    display: inline-block;
+
+    z-index: -50;
+    top: 100px;
+    padding: 0px;
+    opacity: 0.3;
+}
+
+/* --------------- HEADER -------------------*/
+
+.headBack {
+    background-color: rgba(57, 58, 61, 1);
+    height: 85px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 20;
+}
+
+header img {
+    object-position: left;
+    top: 5px;
+    left: 20px;
+    position: fixed;
+    width: 140px;
+    height: 85px;
+}
+
+/* --------------- SEARCH ------------------------*/
+
+.searchbar {
+    width: 100%;
+    align-content: center;
+    display: inline-grid;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    
+    top: 20px;
+    margin: auto;
+    padding-left: 23px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.searchText {
+    padding: 6px;
+
+    border: none;
+    width: 60%;
+    font-size: 17px;
+}
+
+.schText {
+    background-color: rgba(56, 56, 56, 0.5);
+    text-align: center;
+    border: 1px solid #000;
+}
+
+input[type="text"] {
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.schButton {
+    background-color: rgba(40, 40, 40, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 0px solid #111;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100px;
+}
+
+.schButton:hover {
+    background-color: rgba(20, 20, 20, 1);
+    color: rgb(41, 99, 209);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.gridAlignSearch{
+    align-content: center;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+/* --------------- GLOBAL -------------------*/
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+.black {
+    color: rgb(0, 0, 0);
+}
