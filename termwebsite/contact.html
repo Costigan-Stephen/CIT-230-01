@@ -3,7 +3,6 @@
 
 <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
@@ -12,7 +11,7 @@
     <title id="pagename">Contact Us</title>
     <meta name="description" content="Bike supplies, bike tours, and bike events.  The home of all things cycling">
     
-    <!-- --------------START STYLES---------------- -->
+    <!-- ====================START STYLES==================== -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/store-images.css">
     <link rel="stylesheet" href="css/form.css">
@@ -25,26 +24,15 @@
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- --------------END STYLES---------------- -->
+    <!-- ====================END STYLES==================== -->
     
 </head>
 
 <body onload="myFunction()" style="margin:0;">
 
     <div includefile="background-img.html"></div>
-    <div id="modal01" class="modal" onclick="this.style.display='none'" includefile="modal.html"></div>
 
-    <header class="headBack">
-        <div class="searchbar">
-            <img src="images/logo-wht.png" alt="current weather" id="weather_icon">
-            <div>&nbsp;</div>
-            <span class="topLayers">
-            <input type="text" id="search" class="searchText" placeholder="Enter search terms here...">
-            <button onclick="doSearch()" class="schButton"><i class="fa fa-search"></i></button>
-            </span>
-        </div>
-        <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
-    </header>
+    <header class="headBack" includefile="page-elements/searchbar.html"></header>
 
     <div includefile="nav.html"></div>
 
@@ -80,7 +68,7 @@
         &copy; 2018 The Mountain Spoke &nbsp; | &nbsp; <a href="javascript:redirect('home');">Home</a> &nbsp; | &nbsp; <span id="date"></span> &nbsp;
     </footer>
     
-    <!-- --------------START SCRIPTS---------------- -->
+   <!-- ====================START SCRIPTS==================== -->
     <script src="js/searchitems.js"></script>
     <script src="js/navBar.js"></script>
     <script src="js/include.js">
@@ -109,7 +97,7 @@
 
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    <!-- --------------END SCRIPTS---------------- -->
+    <!-- ====================END SCRIPTS==================== -->
 
 </body>
 
