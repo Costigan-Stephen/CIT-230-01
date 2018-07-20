@@ -28,5 +28,7 @@ Spring 2018 Web Front End Development
             <li>Lesson 09: <a href="/WeeklyAssignments/heroes.html">JSON - Heroes</a></li>
             <li>Lesson 09: <a href="/WeeklyAssignments/index2.html">Weather Site</a></li>
             <li>Lesson 10: <a href="/weathersite/index2.html">Completed Weather Site</a></li>
+            <li>Lesson 11: <a href="./lesson-11/lesson4/index.htm">jQuery Project Website</a></li>
+            <li>Lesson 13: <a href="./weathersite/index.html">Final Project Website - The Mountain Spoke</a></li>
         </main>
 </html>
