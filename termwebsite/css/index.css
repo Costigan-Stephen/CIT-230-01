@@ -213,6 +213,27 @@ tr:nth-child(even) {
     border-left: 1px solid black;
 }
 
+/* --------------- VIDEO ------------------------*/
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+    "https://www.youtube.com/embed/43TrRgzzlf8"
+	height: 0;
+}
+
+.videoWrapper video {
+	position: absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: 80%;
+}
+
+
 /* --------------- IMAGES ------------------------*/
 
 figure {
