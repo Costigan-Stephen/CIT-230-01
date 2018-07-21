@@ -223,7 +223,7 @@ tr:nth-child(even) {
 	height: 0;
 }
 
-.videoWrapper video {
+.videoWrapper iframe {
 	position: absolute;
     margin-left: 10%;
     margin-right: 10%;
