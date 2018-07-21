@@ -270,17 +270,12 @@
         line-height: 55px;
     }
     
-    .map{
+    .map, .feed-item-desc{
         padding: 0%;
-        margin-left 2px;
-        margin-right 2px;
+        margin-left: 2px;
+        margin-right: 2px;
     }
     
-    .feed-item-desc{
-        padding: 0%;
-        margin-left 2px;
-        margin-right 2px;
-    }
     
     form .gridIn{
         width: 100%;
@@ -325,5 +320,18 @@
 
     }
     
+    .sh-dlr__content{
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .return{
+        top: -100px;
+    }
+    
+    .displaying{
+        display: none;
+    }
 }
 
