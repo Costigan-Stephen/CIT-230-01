@@ -19,6 +19,9 @@ function redirect(x){
         case "services":
             window.location.href = 'services.html';
             break;
+        case "overview":
+            window.location.href = 'overview.html';
+            break;
         default:
             return true;
         }
