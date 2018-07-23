@@ -163,6 +163,7 @@ h2{
     color: rgb(255,255,255);
     padding-left: 20%;
     padding-right: 20%;
+    cursor: pointer;
 }
 
 .contact-info{
@@ -218,12 +219,14 @@ tr:nth-child(even) {
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
+    margin-top: 20px;
 	padding-top: 25px;
-    "https://www.youtube.com/embed/43TrRgzzlf8"
+    margin-bottom: -10.25%;
+/*    "https://www.youtube.com/embed/43TrRgzzlf8"*/
 	height: 0;
 }
 
-.videoWrapper iframe {
+.videoWrapper iframe, .videoWrapper video {
 	position: absolute;
     margin-left: 10%;
     margin-right: 10%;
@@ -233,6 +236,10 @@ tr:nth-child(even) {
 	height: 80%;
 }
 
+
+.box{
+    display: none;
+}
 
 /* --------------- IMAGES ------------------------*/
 

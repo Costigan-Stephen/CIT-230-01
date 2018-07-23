@@ -22,6 +22,9 @@ function redirect(x){
         case "overview":
             window.location.href = 'overview.html';
             break;
+        case "references":
+            window.location.href = 'references.html';
+            break;
         default:
             return true;
         }
